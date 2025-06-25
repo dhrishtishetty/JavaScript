@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bmiCalculator() {
+            var weight = prompt("Weight:");
+            var height = prompt("Height:");
+            return Math.round(weight / (height * height));
+        }
+
+        var bmi = bmiCalculator();
+        alert("BMI: " + bmi);
+    </script>
+</body>
+</html>
