@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = prompt("Enter your name:");
+        var y = prompt("Enter your Partner's name:");
+
+        var num = Math.floor(Math.random() * 100) + 1;
+
+        if (num > 70) {
+            alert("Love Percentage: " + num + "%" + "\n" + "Congratulations, you both love each other infinitely!");
+        } 
+        
+        if (num > 30 && num <= 70) {
+            alert("Love Percentage: " + num + "%" + "\n" + "You both are on fire!");
+        }
+
+        if (num <= 30) {
+            alert("Love Percentage: " + num + "%" + "\n" + "Your vibes don't match!");
+        }
+    </script>
+</body>
+</html>
