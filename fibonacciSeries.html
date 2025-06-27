@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fibonacciGenerator(n) {
+            var result = [];
+            var a = 0, b = 1;
+            
+            if (n === 0) {
+                //return empty array
+            } else if (n === 1) {
+                result.push(a);
+            } else if (n === 2) {
+                result.push(a);
+                result.push(b);
+            } else {
+                result.push(a);
+                result.push(b);
+    
+                for (var i = 0; i < (n - 2); i++) {
+                    var c = a + b;
+                    result.push(c);
+                    a = b;
+                    b = c;
+                }
+            }
+
+            return result;
+        }
+
+        var output = fibonacciGenerator(4);
+        console.log(output);
+    </script>
+</body>
+</html>
