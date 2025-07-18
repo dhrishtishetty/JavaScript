@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countVowels(str) {
+            var totalVowels = 0;
+            var newStr = str.toLowerCase();
+    
+            for (var i = 0; i < newStr.length; i++) {
+                switch(newStr[i]) {
+                    case "a":
+                    case "e":
+                    case "i":
+                    case "o":
+                    case "u":
+                        totalVowels++;
+                        break;
+                }
+            }
+
+            if (totalVowels === 0) {
+                return "No vowels in the string";
+            } else {
+                return totalVowels;
+            }
+        }
+
+        var str = prompt("Enter a string:"); 
+        var result = countVowels(str);
+        alert("Number of vowels: " + result);
+
+    </script>
+</body>
+</html>

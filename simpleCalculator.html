@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculator(num1, num2, operation) {
+            switch(operation) {
+                case "+":
+                return num1 + num2;
+                break;
+
+                case "-":
+                return num1 - num2;
+                break;
+
+                case "*":
+                return num1 * num2;
+                break;
+
+                case "/":
+                return num1 / num2;
+                break;
+
+                default:
+                return "Enter the correct sign (+, -, *, /)"
+                break;
+            }
+        }
+
+        var num1 = parseInt(prompt("Enter first number: "));
+        var num2 = parseInt(prompt("Enter second number: "));
+        var operation = prompt("Operation (+, -, *, /):");
+        var result = calculator(num1, num2, operation);
+        alert("Result: " + result);
+    </script>
+</body>
+</html>

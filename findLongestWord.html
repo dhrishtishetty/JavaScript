@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findLongestWord(str) {
+            var newStr = str.split(" ");
+            var maxLength = 0;
+
+            for(var i = 0; i < newStr.length; i++) {
+                if(newStr[i].length > maxLength) {
+                    maxLength = newStr[i].length;
+                }
+            }
+
+            return maxLength;
+        }
+
+        var str = prompt("Enter a string:");
+        var result = findLongestWord(str);
+        alert("Length of longest word in the string is " + result); 
+    </script>
+</body>
+</html>
